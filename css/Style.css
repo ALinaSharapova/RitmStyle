@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/*Обнуляющие стили*/
+/*Очистим все отступы и границы*/
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Убираем линии обводки некоторых браузеров*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*задаем блочными теги Html5*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 30px;
+  font-size: 20px;
+  color: #1e1744;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*задаем наследование шрифтов*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(/fonts/ProximaNova-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(/fonts/ProximaNova-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(/fonts/ProximaNova-Semibold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(/fonts/ProximaNova-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  background: #162831;
+  color: #fff;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.navbar {
+  margin-top: 30px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url(../img/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url(../img/menuhover.svg);
+}
+
+.navbar-toggler-icon:active {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.btn-primary {
+  display: none;
+}
+
+.nav-item {
+  margin-right: 5px;
+}
+
+.navmenu {
+  margin-left: 30px;
+}
+
+.margin {
+  margin-top: 30px;
+}
+
+@media (min-width: 1400px) {
+  .navmenu {
+    margin-left: 204px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-item {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn {
+    display: inline;
+  }
+  .margin {
+    margin-top: 0px;
+  }
+}
+
+.nav-link,
+.nav-link:focus {
+  color: #fff;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.nav-link:active,
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn, .btn-primary {
+  background-color: #018ABE;
+  border: 0;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 9px 15px;
+  border-radius: 3px;
+}
+
+.btn:first-child:hover, :not(.btn-check) + .btn:hover {
+  background-color: #076D94;
+  border: 0;
+}
+
+.header-block {
+  margin-top: 50px;
+}
+
+.main-page {
+  background-image: url(../img/01.png);
+  width: 1296px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page p {
+  font-family: "El Messiri", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.flower-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "El Messiri", sans-serif;
+}
+/*# sourceMappingURL=Style.css.map */
