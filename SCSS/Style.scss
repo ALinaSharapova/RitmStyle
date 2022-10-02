@@ -37,19 +37,20 @@ $text-color: #fff;
 body{
     background: #162831;
     color:#fff;
+    height: 1500px;
 } 
-h1{
-    font-size: 42px;
-}
-h2{
-    font-size: 24px;
-}
+// h1{
+//     font-size: 4rem;
+// }
+// h2{
+//     font-size: 24px;
+// }
 // nav{
 //     margin-bottom: 50px;
 // }
-.navbar{
-    margin-top: 30px;
-}
+// .navbar{
+//     margin-top: 30px;
+// }
 //бургер меню
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -81,36 +82,13 @@ h2{
     height: 1.3em;
 }
 ////////
-.btn-primary{
-    display: none;
-}
 .nav-item{
     margin-right: 5px;
 }
 .navmenu{
     margin-left: 30px;
 }
-.margin{
-    margin-top: 30px;
-}
-@media (min-width:1400px){
-    .navmenu{
-        margin-left: 204px;
-    }
-}
-@media (min-width:1200px){
-    .nav-item{
-        margin-right: 30px;
-    }
-}
-@media (min-width:992px){
-    .btn{
-        display: inline;
-    }
-    .margin{
-        margin-top: 0px;
-    }
-}
+
 
 ////////////////////////////не могу поменять цвет
 // .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
@@ -131,7 +109,9 @@ h2{
     color: rgba(255, 255, 255, 0.5);
 }
 
-
+.sign-up{
+    display: none;
+}
 .btn, .btn-primary{
     background-color: #018ABE;
     border: 0;
@@ -147,27 +127,46 @@ h2{
     border: 0;
 }
 
-.header-block{
-    margin-top: 50px;
+
+////уже не помню что это
+// .main-page{
+//     background-image: url(../img/01.png) ;
+//     width: 1296px;
+//     height: 600px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     p{
+//         font-family: $text-title;
+//         font-size: 64px;
+//         font-weight: 700;
+//         line-height: 140%;
+//         text-align: center;
+//         margin-top: 40px;
+//     }
+// }
+
+
+
+//////////////////////gtht ltkfndjfaj
+#main-block{
+    background-image: url(../img/01.png) ;
+    max-width: 1296px;
+    min-height: 600px;
+    background-position-x: -10px;
+    background-repeat: no-repeat;
 }
 
-.main-page{
-    background-image: url(../img/01.png) ;
-    width: 1296px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p{
-        font-family: $text-title;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 140%;
-        text-align: center;
-        margin-top: 40px;
-    }
-}
+.header-block{
+   h1{
+           font-family: $text-title;
+           font-weight: 700;
+           line-height: 140%;
+           text-align: center;
+           margin-top: 40px;
+       }
+   }
 
 .flower-title{
     display: flex;
@@ -175,3 +174,116 @@ h2{
     align-items: center;
     font-family: $text-title;
 }
+.flower-title-M{
+    font-size: 42px;
+}
+
+.flower-r, .flower-blue-r{
+    margin-left: 16px;
+    margin-bottom: 10px;
+    width: 22px;
+}
+.flower-l, .flower-blue-l{
+    margin-right: 16px;
+    margin-bottom: 10px;
+    width: 22px;
+}
+
+.modal-title{
+    color: #162831;
+    font-family: $text;
+    font-weight: 600;
+}
+.btn-secondary{
+    background-color: #018ABE;
+    font-family: $text;
+}
+
+.modal-body{
+    color: #162831;
+    font-size: 14px;
+}
+.form-select, .form-control{
+    color: #162831;
+    font-size: 14px;
+
+}
+.form-select:focus,
+.form-select:active,
+.form-control:active,
+.form-control:focus
+{
+    box-shadow: none;
+    border: 1px solid #a8acaf;
+}
+.btn-secondary{
+    max-width: 180px;
+}
+.btn-close {
+    background-image: url(../img/close-btn.svg);
+}
+.btn-close:hover,
+.btn-close:focus
+{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.sessions{
+    margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1400px){
+    .navmenu{
+        margin-left: 204px;
+    }
+}
+@media (min-width:1284px){
+    #main-block{
+        background-position-x: 0px;
+    }
+}
+@media (min-width:1200px){
+    .nav-item{
+        margin-right: 30px;
+    }
+}
+@media (min-width:992px){
+    .sign-up{
+        display: inline;
+    }
+    .margin{
+        margin-top: 0px;
+    }
+} 
+@media (min-width: 530px){
+    .flower-r{
+        margin-left: 66px;
+        width: 28px;
+    }
+    .flower-l{
+        margin-right: 66px;
+        width: 28px;
+    }
+ }
+
+ @media (min-width: 375px){
+    .flower-r, .flower-blue-r{
+        margin-left: 36px;
+    }
+    .flower-l, .flower-blue-l{
+        margin-right: 36px;
+    }
+ }
