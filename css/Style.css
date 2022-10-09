@@ -126,7 +126,7 @@ h6 {
 body {
   background: #162831;
   color: #fff;
-  height: 1500px;
+  min-height: 2000px;
 }
 
 .navbar-toggler,
@@ -295,6 +295,21 @@ body {
 
 .sessions {
   margin-top: 150px;
+}
+
+.columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  row-gap: 24px;
+}
+
+.firstimage {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 @media (min-width: 1400px) {

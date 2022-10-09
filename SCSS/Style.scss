@@ -37,7 +37,8 @@ $text-color: #fff;
 body{
     background: #162831;
     color:#fff;
-    height: 1500px;
+    min-height: 2000px;
+
 } 
 // h1{
 //     font-size: 4rem;
@@ -234,7 +235,31 @@ body{
     margin-top: 150px;
 }
 
+.columns{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    row-gap: 24px;
+}
+// .columns:first-child{
+//     grid-row-start: 2;
+//     grid-row-end: 3;
 
+// }
+.firstimage{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+// .images2{
+  
+
+ 
+//     grid-template-columns:repeat(auto-fit, minmax(416px, 1fr)) ;
+   
+//     row-gap: 34px;
+//     column-gap: 20px;
+//     justify-items: center;
+// }
 
 
 
