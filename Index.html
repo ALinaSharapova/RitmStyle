@@ -3,11 +3,12 @@
 <meta charset="utf-8"/>
 <title> Акватерапия </title>
 
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <link rel="stylesheet" href="css/Style.css">
 <meta name="viewport" content="width=device-width", initial-scale="1.0">
-
-
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                                           <a class="nav-link" href="#">Главная</a>
                                     </li>
                                     <li class="nav-item">
-                                          <a class="nav-link" href="#">Сеансы</a>
+                                          <a class="nav-link" href="#2">Сеансы</a>
                                     </li>
                                     <li class="nav-item">
                                           <a class="nav-link" href="#">Отзывы</a>
@@ -43,121 +44,303 @@
                                           <a class="nav-link" href="#">Блог</a>
                                     </li>
                               </ul>
+
                               <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться на сеанс</button>
                               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                    <div class="modal-content">
-                                          <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Запись на прием в клинику</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                          </div>
+                                    <div class="modal-dialog">
+                                          <div class="modal-content">
+                                                <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Запись на прием в клинику</h5>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
 
-                                          <div class="modal-body">
-                                                <p>Администратор клиники с радостью ответит на ваши вопросы и запишет к нужному специалисту.</p>
-                                                <form>
-                                                      <div class="mb-3">
-                                                            <label for="exampleFormControlInput1" class="form-label">Имя</label>
-                                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Имя Фамилия">
-                                                      </div>
-                                                      <div class="mb-3">
-                                                            <label for="exampleFormControlInput1" class="form-label">Адрес электронной почты:</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                                                      </div>
-                                                      <label for="exampleFormControlInput1" class="form-label">Сеансы RitmStyle:</label>
-                                                      <select class="form-select mb-3" aria-label="Default select example">
-                                                            <option selected>Стандартный RitmStyle</option>
-                                                            <option value="1">RitmStyle для пар</option>
-                                                            <option value="2">RitmStyle с полным погружением под воду</option>
-                                                            <option value="3">RitmStyle для беременных</option>
-                                                            <option value="4">RitmStyle + красочная подводная фотосессия</option>
-                                                      </select>
-
-                                                      
-                                                
-                                                </form>
-                                                
-                                          </div>
-
-                                          <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">Сохранить изменения</button>
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                <div class="modal-body">
+                                                      <p>Администратор клиники с радостью ответит на ваши вопросы и запишет к нужному специалисту.</p>
+                                                      <form>
+                                                            <div class="mb-3">
+                                                                  <label for="exampleFormControlInput1" class="form-label">Имя</label>
+                                                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Имя Фамилия">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                  <label for="exampleFormControlInput1" class="form-label">Адрес электронной почты:</label>
+                                                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                                            </div>
+                                                            <label for="exampleFormControlInput1" class="form-label">Сеансы RitmStyle:</label>
+                                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                                  <option selected>Стандартный RitmStyle</option>
+                                                                  <option value="1">RitmStyle для пар</option>
+                                                                  <option value="2">RitmStyle с полным погружением под воду</option>
+                                                                  <option value="3">RitmStyle для беременных</option>
+                                                                  <option value="4">RitmStyle + красочная подводная фотосессия</option>
+                                                            </select>
+                                                      </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                      <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                </div>
                                           </div>
                                     </div>
                               </div>
                         </div>
-                        </div>
                   </div>
             </nav>
-
-            <!-- <div class="header-block">
-                  <div class="container main-page">
-                        <div class="flower-title">
-                              <img src="../img/flower left.svg" style="margin-right: 66px; margin-bottom: 10px;">
-                              <h2>Укрепление здоровья</h2>
-                              <img src="../img/flower right.svg" style="margin-left: 66px; margin-bottom: 10px;">
-                        </div>
-                        <p>Акватерапия<br> RitmStyle</p>
-                  </div>
-                  
-            </div> -->
       </header>
-      
+
       <section class="header-block">
             <div id="main-block" class="container mt-4 mt-md-5 d-flex align-items-center justify-content-center">
-                  <div   class="row">
-                        <div class="display-7 flower-title col-12">
-                             <img class="flower-l" src="img/flower left.svg">
-                             <h2>Укрепление здоровья</h2>
-                             <img class="flower-r" src="img/flower right.svg">
-                        </div>
-                        <div class="col-12">
-                              <h1 class="display-5">Акватерапия<br> RitmStyle</h1>
-                        </div>
-                  </div>
-            </div>
-      </section>
-
-      <section class="sessions">
-            <div class="container">
                   <div class="row">
-                        <div class="col-12 flower-title flower-title-M mb-5">
-                              <img class="flower-blue-l" src="img/flower-blue-left.svg">
-                             <h2>Сеансы RitmStyle</h2>
-                             <img class="flower-blue-r" src="img/flower-blue-right.svg">
+                        <div class="flower-title col-12">
+                              <img class="flower-l" src="img/flower left.svg">
+                              <p>Укрепление здоровья</p>
+                              <img class="flower-r" src="img/flower right.svg">
+                        </div>
+                        <div class="col-12 header-block-p">
+                              <p class="display-5">Акватерапия<br> RitmStyle</p>
                         </div>
                   </div>
-                  <!-- <div class="row">
-                        <div class="col-4">
-                              <div class="01">
-                                    <img src="img/02.png">
-                              </div>
-                        </div>
-                        <div class="col-4">
-                              <div class="02">
-                                    <img src="img/03.png">
-                              </div>
-                        </div>
-                        <div class="col-4">
-                              <div class="02">
-                                    <img src="img/03.png">
-                              </div>
-                        </div>
-                        
-                  </div> -->
-                  <div class="columns">
-                        <img class="firstimage" src="img/02.png">
-                        <img src="img/03.png">
-                        <img src="img/03.png">
-                        <img src="img/03.png">
-                        <img src="img/03.png">
-                  </div>
-                 
             </div>
       </section>
 
-                       
-                
+<section id="2" class="sessions">
+      <div class="container">
+            <div class="row">
+                  <div class="col-12 flower-title flower-title-M mb-2 mb-sm-4 mb-lg-5">
+                        <img class="flower-blue-l" src="img/flower-blue-left.svg">
+                        <h1>Сеансы RitmStyle</h1>
+                        <img class="flower-blue-r" src="img/flower-blue-right.svg">
+                  </div>
+            </div>
+            <div class="row mt-2 mt-sm-4 mt-lg-5">
+                  <div class="d-none d-sm-block col-12 mb-2 mb-sm-3 col-lg-5 col-xl-4">      
+                        <div class="sessions__blocks__img">
+                              <a href="#">
+                                    <img class="img2" src="img/03.png">
+                                    <h2>Стандартный RitmStyle</h2>
+                              </a> 
+                        </div>
+                  </div>
+                  <div class="d-block d-sm-none col-12 mb-2 mb-sm-3 col-lg-5 col-xl-4">      
+                        <div class="sessions__blocks__img">
+                              <a href="#">
+                                    <img class="img2" src="img/02.png">
+                                    <h2>Стандартный RitmStyle</h2>
+                              </a> 
+                        </div>
+                  </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+
+                  <div class="col-12 col-lg-7 col-xl-8">
+                        <div class="row sessions__blocks">
+                              <div class="col-12 mb-2 col-sm-6 mb-sm-3 col-lg-6">
+                                    <div class="sessions__blocks__img">
+                                          <a href="#">
+                                                <img class="img3" src="img/02.png">
+                                                <h2>RitmStyle для пар</h2>
+                                          </a>   
+                                    </div>
+                              </div>
+                              <div class="col-12 mb-2 col-sm-6 mb-sm-3 col-lg-6">
+                                    <div class="sessions__blocks__img">
+                                          <a href="#">
+                                                <img class="img3" src="img/02.png">
+                                                <h2>RitmStyle + красочная<br>подводная фотосессия</h2>
+                                          </a>   
+                                    </div>
+                              </div>
+                              <div class="col-12 mb-2 col-sm-6 mb-sm-3 col-lg-6">
+                                    <div class="sessions__blocks__img">
+                                          <a href="#">
+                                                <img class="img3" src="img/02.png">
+                                                <h2>RitmStyle для беременных</h2>
+                                          </a>   
+                                    </div>
+                              </div>
+                              <div class="col-12 mb-2 col-sm-6 mb-sm-3 col-lg-6">
+                                    <div class="sessions__blocks__img">
+                                          <a href="#">
+                                                <img class="img3" src="img/02.png">
+                                                <h2>RitmStyle с полным <br> погружением под воду</h2>
+                                          </a>   
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</section>  
+
+<section id="3" class="reviews">
+      <div class="container">
+            <div class="row mb-5">
+                  <div class="col-12 flower-title flower-title-M mb-2 mb-sm-4 mb-lg-5">
+                        <img class="flower-blue-l" src="img/flower-blue-left.svg">
+                        <h1>Отзывы</h1>
+                        <img class="flower-blue-r" src="img/flower-blue-right.svg">
+                  </div>
+            </div>
+            <div class="row justify-content-center">
+                  <div id="carouselExampleIndicators" class="carousel slide col-6 " data-bs-ride="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-1 active">
+                      <h3>Кира Иванова</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+                        <br><br>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                    </div>
+                    <div class="carousel-item carousel-item-2">
+                        <h3>Яна Жернова</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.
+                         <br><br>     Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper. </p>
+                    </div>
+                    <div class="carousel-item carousel-item-3">
+                        <h3>Александра Дмитриева</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur nulla viverra egestas tellus. Cursus scelerisque phasellus netus proin. Etiam mauris maecenas facilisis faucibus mauris eleifend purus. Purus dictum vulputate elementum mauris amet.
+                        <br><br>      Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at. </p>
+                    </div>
+                  </div>
+                </div>
+            </div>     
+      
+      
+
+      </div>
+</section>
+<section class="slider">
+      <div class="col-12 flower-title flower-title-M mb-2 mb-sm-4 mb-lg-5">
+            <img class="flower-blue-l" src="img/flower-blue-left.svg">
+            <h1>Отзывы</h1>
+            <img class="flower-blue-r" src="img/flower-blue-right.svg">
+      </div>
+      <div class="container__slider">
+            <div class="center">
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Кира Иванова</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+                              <br><br>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                        </div>
+                         
+                   </div>
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Яна Жернова</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.
+                              <br><br>     Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper. </p>
+                        </div>
+                  </div>
+                         
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Александра Дмитриева</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur nulla viverra egestas tellus. Cursus scelerisque phasellus netus proin. Etiam mauris maecenas facilisis faucibus mauris eleifend purus. Purus dictum vulputate elementum mauris amet.
+                         <br><br>      Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at. </p>
+                        </div>
+                         
+                   </div>
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Кира Иванова</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+                         <br><br>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                        </div>
+                         
+                   </div>
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Александра Дмитриева</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur nulla viverra egestas tellus. Cursus scelerisque phasellus netus proin. Etiam mauris maecenas facilisis faucibus mauris eleifend purus. Purus dictum vulputate elementum mauris amet.
+                         <br><br>      Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at. </p>
+                        </div>
+                         
+                   </div>
+             </div> 
+        </div>
+</section>
+<!-- <section class="slider">
+      <div class="col-12 flower-title flower-title-M mb-2 mb-sm-4 mb-lg-5">
+            <img class="flower-blue-l" src="img/flower-blue-left.svg">
+            <h1>Отзывы</h1>
+            <img class="flower-blue-r" src="img/flower-blue-right.svg">
+      </div>
+      <div class="container__slider">
+            <div class="center">
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Кира Иванова</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+                              <br><br>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                        </div>
+                         
+                   </div>
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Яна Жернова</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.
+                              <br><br>     Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper. </p>
+                        </div>
+                  </div>
+                         
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Александра Дмитриева</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur nulla viverra egestas tellus. Cursus scelerisque phasellus netus proin. Etiam mauris maecenas facilisis faucibus mauris eleifend purus. Purus dictum vulputate elementum mauris amet.
+                         <br><br>      Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at. </p>
+                        </div>
+                         
+                   </div>
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Кира Иванова</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+                         <br><br>Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. </p>
+                        </div>
+                         
+                   </div>
+                   <div class="slider__item">
+                        <div class="slider__content">
+                              <h3>Александра Дмитриева</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur nulla viverra egestas tellus. Cursus scelerisque phasellus netus proin. Etiam mauris maecenas facilisis faucibus mauris eleifend purus. Purus dictum vulputate elementum mauris amet.
+                         <br><br>      Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at. </p>
+                        </div>
+                         
+                   </div>
+             </div> 
+        </div>
+</section> -->
+<!-- <section id="4" class="about">
+      <div class="container">
+            <div class="row">
+                  <div class="col-12 flower-title flower-title-M mb-2 mb-sm-4 mb-lg-5">
+                        <img class="flower-blue-l" src="img/flower-blue-left.svg">
+                        <h1>Об RitmStyle</h1>
+                        <img class="flower-blue-r" src="img/flower-blue-right.svg">
+                  </div>
+            </div>
+            <div class="row about__block justify-content-center">
+                  <div class="col-5">
+                        <h2 class="mb-3">RitmStyle массаж </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                        <br><br>      Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.</p>
+                  </div>
+                  <div class="col-5">
+                        <img src="/img/04.png">
+                  </div>         
+            </div>
+      </div>
+</section> -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="JS/script.js"></script>
 </body>
 </html>
